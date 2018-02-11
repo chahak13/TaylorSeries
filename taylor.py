@@ -19,8 +19,6 @@ for n in range(2,10):
         for i in range(len(points)):
                 taylor[i] += (sp.derivative(f,0.0,dx=1e-1,n=degree, order=11)*(points[i])**degree)/math.factorial(degree)
 
-            # taylor[i] += (points[i]**degree)/math.factorial(degree)
-    # plt.plot(points, f(points))
     plt.plot(points,taylor,label='taylor')
     plt.plot(points,f(points),label='real')
     plt.legend()
