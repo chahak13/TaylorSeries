@@ -1,7 +1,6 @@
 import numpy as np
 import scipy.misc as sp
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 import math
 
 def f(x):
